@@ -5,3 +5,6 @@
         -
             name: 'Execute a command to display hosts file'
             command: cat /etc/hosts
+        -
+            name: 'Execute a command to display hosts file'
+            command: 'cat /etc/hosts'
