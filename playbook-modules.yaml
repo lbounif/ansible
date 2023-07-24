@@ -5,3 +5,8 @@
         -
             name: 'Execute a script on all web server nodes'
             script: /tmp/install_script.sh
+        -
+            name: 'Start httpd services'
+            service:
+                name: httpd
+                state: started
