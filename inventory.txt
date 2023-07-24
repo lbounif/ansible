@@ -13,3 +13,7 @@ web3
 
 [db_servers]
 db1
+
+[all_servers:children]
+web_servers
+db_servers
