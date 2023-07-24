@@ -7,7 +7,12 @@
             lineinfile:
                 path: /etc/resolv.conf
                 line: 'nameserver 10.1.250.10'
-        -
+        - 
+            name: 'Create a new User'
+            user:
+              name: web_user
+              uid: 1040
+              group: developers
         -
             name: 'Execute a script on all web server nodes'
             script: /tmp/install_script.sh
